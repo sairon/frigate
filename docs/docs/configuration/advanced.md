@@ -209,7 +209,7 @@ You can also validate your config at the command line by using the docker contai
 docker run                                \
   -v $(pwd)/config.yml:/config/config.yml \
   --entrypoint python3                    \
-  ghcr.io/blakeblackshear/frigate:stable  \
+  ghcr.io/deforest481/frigate:stable  \
   -u -m frigate                           \
   --validate-config
 ```

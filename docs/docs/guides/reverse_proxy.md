@@ -164,7 +164,7 @@ Before using the example below, you must first set up Traefik with the [Docker p
 services:
   frigate:
     container_name: frigate
-    image: ghcr.io/blakeblackshear/frigate:stable
+    image: ghcr.io/deforest481/frigate:stable
     ...
     ...
     labels:

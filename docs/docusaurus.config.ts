@@ -11,7 +11,7 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'blakeblackshear',
+  organizationName: 'deforest481',
   projectName: 'frigate',
   themes: ['@docusaurus/theme-mermaid', 'docusaurus-theme-openapi-docs'],
   markdown: {
@@ -83,7 +83,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/blakeblackshear/frigate',
+          href: 'https://github.com/deforest481/frigate',
           label: 'GitHub',
           position: 'right',
         },
@@ -97,11 +97,11 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/blakeblackshear/frigate',
+              href: 'https://github.com/deforest481/frigate',
             },
             {
               label: 'Discussions',
-              href: 'https://github.com/blakeblackshear/frigate/discussions',
+              href: 'https://github.com/deforest481/frigate/discussions',
             },
           ],
         },
@@ -140,7 +140,7 @@ const config: Config = {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
-          editUrl: 'https://github.com/blakeblackshear/frigate/edit/master/docs/',
+          editUrl: 'https://github.com/deforest481/frigate/edit/master/docs/',
           sidebarCollapsible: false,
           docItemComponent: '@theme/ApiItem', // Derived from docusaurus-theme-openapi
         },

@@ -10,10 +10,10 @@ body:
 
         **If you are unsure if your issue is actually a bug or not, please submit a support request first.**
 
-        [discussions]: https://www.github.com/blakeblackshear/frigate/discussions
-        [prs]: https://www.github.com/blakeblackshear/frigate/pulls
+        [discussions]: https://www.github.com/deforest481/frigate/discussions
+        [prs]: https://www.github.com/deforest481/frigate/pulls
         [docs]: https://docs.frigate.video
-        [faq]: https://github.com/blakeblackshear/frigate/discussions/12724
+        [faq]: https://github.com/deforest481/frigate/discussions/12724
   - type: checkboxes
     attributes:
       label: Checklist

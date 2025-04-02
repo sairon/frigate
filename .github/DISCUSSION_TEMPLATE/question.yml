@@ -10,9 +10,9 @@ body:
 
         **If you are looking for support, start a new discussion and use a support category.**
 
-        [discussions]: https://www.github.com/blakeblackshear/frigate/discussions
+        [discussions]: https://www.github.com/deforest481/frigate/discussions
         [docs]: https://docs.frigate.video
-        [faq]: https://github.com/blakeblackshear/frigate/discussions/12724
+        [faq]: https://github.com/deforest481/frigate/discussions/12724
   - type: textarea
     id: description
     attributes:

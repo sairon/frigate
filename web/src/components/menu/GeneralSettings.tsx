@@ -344,7 +344,7 @@ export default function GeneralSettings({ className }: GeneralSettingsProps) {
               </MenuItem>
             </a>
             <a
-              href="https://github.com/blakeblackshear/frigate"
+              href="https://github.com/deforest481/frigate"
               target="_blank"
             >
               <MenuItem

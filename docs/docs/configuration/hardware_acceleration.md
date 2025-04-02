@@ -46,7 +46,7 @@ docker run -d \
   --name frigate \
   ...
   --device /dev/video11 \
-  ghcr.io/blakeblackshear/frigate:stable
+  ghcr.io/deforest481/frigate:stable
 ```
 
 `/dev/video11` is the correct device (on Raspberry Pi 4B). You can check
@@ -128,7 +128,7 @@ This method works, but it gives more permissions to the container than are actua
 services:
   frigate:
     ...
-    image: ghcr.io/blakeblackshear/frigate:stable
+    image: ghcr.io/deforest481/frigate:stable
     privileged: true
 ```
 
@@ -139,7 +139,7 @@ docker run -d \
   --name frigate \
   ...
   --privileged \
-  ghcr.io/blakeblackshear/frigate:stable
+  ghcr.io/deforest481/frigate:stable
 ```
 
 #### CAP_PERFMON
@@ -152,7 +152,7 @@ Only recent versions of Docker support the `CAP_PERFMON` capability. You can tes
 services:
   frigate:
     ...
-    image: ghcr.io/blakeblackshear/frigate:stable
+    image: ghcr.io/deforest481/frigate:stable
     cap_add:
       - CAP_PERFMON
 ```
@@ -164,7 +164,7 @@ docker run -d \
   --name frigate \
   ...
   --cap-add=CAP_PERFMON \
-  ghcr.io/blakeblackshear/frigate:stable
+  ghcr.io/deforest481/frigate:stable
 ```
 
 #### perf_event_paranoid
@@ -208,7 +208,7 @@ Additional configuration is needed for the Docker container to be able to access
 services:
   frigate:
     ...
-    image: ghcr.io/blakeblackshear/frigate:stable
+    image: ghcr.io/deforest481/frigate:stable
     deploy:    # <------------- Add this section
       resources:
         reservations:
@@ -226,7 +226,7 @@ docker run -d \
   --name frigate \
   ...
   --gpus=all \
-  ghcr.io/blakeblackshear/frigate:stable
+  ghcr.io/deforest481/frigate:stable
 ```
 
 ### Setup Decoder
@@ -298,7 +298,7 @@ You will need to use the image with the nvidia container runtime:
 docker run -d \
   ...
   --runtime nvidia
-  ghcr.io/blakeblackshear/frigate:stable-tensorrt-jp5
+  ghcr.io/deforest481/frigate:stable-tensorrt-jp5
 ```
 
 ### Docker Compose - Jetson
@@ -308,7 +308,7 @@ version: '2.4'
 services:
   frigate:
     ...
-    image: ghcr.io/blakeblackshear/frigate:stable-tensorrt-jp5
+    image: ghcr.io/deforest481/frigate:stable-tensorrt-jp5
     runtime: nvidia   # Add this
 ```
 

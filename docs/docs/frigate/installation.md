@@ -111,13 +111,13 @@ For Raspberry Pi 5 users with the AI Kit, installation is straightforward. Simpl
 For other installations, follow these steps for installation:
 
 1. Install the driver from the [Hailo GitHub repository](https://github.com/hailo-ai/hailort-drivers). A convenient script for Linux is available to clone the repository, build the driver, and install it.
-2. Copy or download [this script](https://github.com/blakeblackshear/frigate/blob/41c9b13d2fffce508b32dfc971fa529b49295fbd/docker/hailo8l/user_installation.sh).
+2. Copy or download [this script](https://github.com/deforest481/frigate/blob/41c9b13d2fffce508b32dfc971fa529b49295fbd/docker/hailo8l/user_installation.sh).
 3. Ensure it has execution permissions with `sudo chmod +x user_installation.sh`
 4. Run the script with `./user_installation.sh`
 
 #### Setup
 
-To set up Frigate, follow the default installation instructions, but use a Docker image with the `-h8l` suffix, for example: `ghcr.io/blakeblackshear/frigate:stable-h8l`
+To set up Frigate, follow the default installation instructions, but use a Docker image with the `-h8l` suffix, for example: `ghcr.io/deforest481/frigate:stable-h8l`
 
 Next, grant Docker permissions to access your hardware by adding the following lines to your `docker-compose.yml` file:
 
@@ -149,7 +149,7 @@ I recommend [Joshua Riek's Ubuntu for Rockchip](https://github.com/Joshua-Riek/u
 
 #### Setup
 
-Follow Frigate's default installation instructions, but use a docker image with `-rk` suffix for example `ghcr.io/blakeblackshear/frigate:stable-rk`.
+Follow Frigate's default installation instructions, but use a docker image with `-rk` suffix for example `ghcr.io/deforest481/frigate:stable-rk`.
 
 Next, you need to grant docker permissions to access your hardware:
 
@@ -194,7 +194,7 @@ services:
     privileged: true # this may not be necessary for all setups
     restart: unless-stopped
     stop_grace_period: 30s # allow enough time to shut down the various services
-    image: ghcr.io/blakeblackshear/frigate:stable
+    image: ghcr.io/deforest481/frigate:stable
     shm_size: "512mb" # update for your cameras based on calculation above
     devices:
       - /dev/bus/usb:/dev/bus/usb # Passes the USB Coral, needs to be modified for other versions
@@ -238,7 +238,7 @@ docker run -d \
   -p 8554:8554 \
   -p 8555:8555/tcp \
   -p 8555:8555/udp \
-  ghcr.io/blakeblackshear/frigate:stable
+  ghcr.io/deforest481/frigate:stable
 ```
 
 The official docker image tags for the current stable version are:
@@ -278,7 +278,7 @@ See [the network storage guide](/guides/ha_network_storage.md) for instructions 
 HassOS users can install via the addon repository.
 
 1. Navigate to Supervisor > Add-on Store > Repositories
-2. Add https://github.com/blakeblackshear/frigate-hass-addons
+2. Add https://github.com/deforest481/frigate-hass-addons
 3. Install your desired Frigate NVR Addon and navigate to it's page
 4. Setup your network configuration in the `Configuration` tab
 5. (not for proxy addon) Create the file `frigate.yaml` in your `config` directory with your detailed Frigate configuration
@@ -296,7 +296,7 @@ There are several versions of the addon available:
 
 ## Kubernetes
 
-Use the [helm chart](https://github.com/blakeblackshear/blakeshome-charts/tree/master/charts/frigate).
+Use the [helm chart](https://github.com/deforest481/blakeshome-charts/tree/master/charts/frigate).
 
 ## Unraid
 
@@ -319,15 +319,15 @@ If you choose to run Frigate via LXC in Proxmox the setup can be complex so be p
   - `lxc.mount.entry: /dev/dri/renderD128 dev/dri/renderD128 none bind,optional,create=file`
 - The LXC configuration will likely also need `features: fuse=1,nesting=1`. This allows running a Docker container in an LXC container (`nesting`) and prevents duplicated files and wasted storage (`fuse`).
 - Successfully passing hardware devices through multiple levels of containerization (LXC then Docker) can be difficult. Many people make devices like `/dev/dri/renderD128` world-readable in the host or run Frigate in a privileged LXC container.
-- The virtualization layer often introduces a sizable amount of overhead for communication with Coral devices, but [not in all circumstances](https://github.com/blakeblackshear/frigate/discussions/1837).
+- The virtualization layer often introduces a sizable amount of overhead for communication with Coral devices, but [not in all circumstances](https://github.com/deforest481/frigate/discussions/1837).
 
-See the [Proxmox LXC discussion](https://github.com/blakeblackshear/frigate/discussions/5773) for more general information.
+See the [Proxmox LXC discussion](https://github.com/deforest481/frigate/discussions/5773) for more general information.
 
 ## ESXi
 
 For details on running Frigate using ESXi, please see the instructions [here](https://williamlam.com/2023/05/frigate-nvr-with-coral-tpu-igpu-passthrough-using-esxi-on-intel-nuc.html).
 
-If you're running Frigate on a rack mounted server and want to passthrough the Google Coral, [read this.](https://github.com/blakeblackshear/frigate/issues/305)
+If you're running Frigate on a rack mounted server and want to passthrough the Google Coral, [read this.](https://github.com/deforest481/frigate/issues/305)
 
 ## Synology NAS on DSM 7
 
@@ -390,7 +390,7 @@ Run the following commands to install Frigate (using `stable` version as example
 
 ```shell
 # Download Frigate image
-docker pull ghcr.io/blakeblackshear/frigate:stable
+docker pull ghcr.io/deforest481/frigate:stable
 # Create directory to host Frigate config file on QNAP file system.
 # E.g., you can choose to create it under /share/Container.
 mkdir -p /share/Container/frigate/config
@@ -425,7 +425,7 @@ docker run \
   --cpus="2" \
   --detach=true \
   -t \
-  ghcr.io/blakeblackshear/frigate:stable
+  ghcr.io/deforest481/frigate:stable
 ```
 
 Log into QNAP, open Container Station. Frigate docker container should be listed under 'Overview' and running. Visit Frigate Web UI by clicking Frigate docker, and then clicking the URL shown at the top of the detail page.

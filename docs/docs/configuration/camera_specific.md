@@ -105,7 +105,7 @@ If available, recommended settings are:
 - `On, fluency first` this sets the camera to CBR (constant bit rate)
 - `Interframe Space 1x` this sets the iframe interval to the same as the frame rate
 
-According to [this discussion](https://github.com/blakeblackshear/frigate/issues/3235#issuecomment-1135876973), the http video streams seem to be the most reliable for Reolink.
+According to [this discussion](https://github.com/deforest481/frigate/issues/3235#issuecomment-1135876973), the http video streams seem to be the most reliable for Reolink.
 
 Cameras connected via a Reolink NVR can be connected with the http stream, use `channel[0..15]` in the stream url for the additional channels.
 The setup of main stream can be also done via RTSP, but isn't always reliable on all hardware versions. The example configuration is working with the oldest HW version RLN16-410 device with multiple types of cameras.

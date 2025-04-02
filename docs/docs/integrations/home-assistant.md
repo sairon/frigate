@@ -3,7 +3,7 @@ id: home-assistant
 title: Home Assistant Integration
 ---
 
-The best way to integrate with Home Assistant is to use the [official integration](https://github.com/blakeblackshear/frigate-hass-integration).
+The best way to integrate with Home Assistant is to use the [official integration](https://github.com/deforest481/frigate-hass-integration).
 
 ## Installation
 
@@ -66,7 +66,7 @@ services:
     ...
 
   frigate:
-    image: ghcr.io/blakeblackshear/frigate:stable
+    image: ghcr.io/deforest481/frigate:stable
     ...
     ports:
       - "172.17.0.1:5000:5000"
@@ -86,7 +86,7 @@ services:
     ...
 
   frigate:
-    image: ghcr.io/blakeblackshear/frigate:stable
+    image: ghcr.io/deforest481/frigate:stable
     ...
     ports:
       # - "172.17.0.1:5000:5000"
@@ -116,7 +116,7 @@ Use `http://<frigate_device_ip>:8971` as the URL for the integration so that aut
 ```yaml
 services:
   frigate:
-    image: ghcr.io/blakeblackshear/frigate:stable
+    image: ghcr.io/deforest481/frigate:stable
     ...
     ports:
       - "8971:8971"
@@ -130,7 +130,7 @@ Use `http://<frigate_device_tailscale_ip>:5000` as the URL for the integration.
 ```yaml
 services:
   frigate:
-    image: ghcr.io/blakeblackshear/frigate:stable
+    image: ghcr.io/deforest481/frigate:stable
     ...
     ports:
       - "<tailscale_ip>:5000:5000"

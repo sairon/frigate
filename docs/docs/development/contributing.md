@@ -9,7 +9,7 @@ title: Contributing To The Main Code Base
 
 This repository holds the main Frigate application and all of its dependencies.
 
-Fork [blakeblackshear/frigate](https://github.com/blakeblackshear/frigate.git) to your own GitHub profile, then clone the forked repo to your local machine.
+Fork [deforest481/frigate](https://github.com/deforest481/frigate.git) to your own GitHub profile, then clone the forked repo to your local machine.
 
 From here, follow the guides for:
 
@@ -21,13 +21,13 @@ From here, follow the guides for:
 
 This repository holds the Home Assistant Addon, for use with Home Assistant OS and compatible installations. It is the piece that allows you to run Frigate from your Home Assistant Supervisor tab.
 
-Fork [blakeblackshear/frigate-hass-addons](https://github.com/blakeblackshear/frigate-hass-addons) to your own Github profile, then clone the forked repo to your local machine.
+Fork [deforest481/frigate-hass-addons](https://github.com/deforest481/frigate-hass-addons) to your own Github profile, then clone the forked repo to your local machine.
 
 ### Frigate Home Assistant Integration
 
 This repository holds the custom integration that allows your Home Assistant installation to automatically create entities for your Frigate instance, whether you run that with the [addon](#frigate-home-assistant-addon) or in a separate Docker instance.
 
-Fork [blakeblackshear/frigate-hass-integration](https://github.com/blakeblackshear/frigate-hass-integration) to your own GitHub profile, then clone the forked repo to your local machine.
+Fork [deforest481/frigate-hass-integration](https://github.com/deforest481/frigate-hass-integration) to your own GitHub profile, then clone the forked repo to your local machine.
 
 ## Core
 
@@ -166,7 +166,7 @@ The Web UI is built using [Vite](https://vitejs.dev/), [Preact](https://preactjs
 Light guidelines and advice:
 
 - Avoid adding more dependencies. The web UI intends to be lightweight and fast to load.
-- Do not make large sweeping changes. [Open a discussion on GitHub](https://github.com/blakeblackshear/frigate/discussions/new) for any large or architectural ideas.
+- Do not make large sweeping changes. [Open a discussion on GitHub](https://github.com/deforest481/frigate/discussions/new) for any large or architectural ideas.
 - Ensure `lint` passes. This command will ensure basic conformance to styles, applying as many automatic fixes as possible, including Prettier formatting.
 
 ```console

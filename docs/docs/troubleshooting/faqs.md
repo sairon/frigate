@@ -96,7 +96,7 @@ docker run -d \
   -p 8554:8554 \
   -p 8555:8555/tcp \
   -p 8555:8555/udp \
-  ghcr.io/blakeblackshear/frigate:stable
+  ghcr.io/deforest481/frigate:stable
 ```
 
 ### My RTSP stream works fine in VLC, but it does not work when I put the same URL in my Frigate config. Is this a bug?

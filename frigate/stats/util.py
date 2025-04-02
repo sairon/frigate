@@ -34,7 +34,7 @@ def get_latest_version(config: FrigateConfig) -> str:
 
     try:
         request = requests.get(
-            "https://api.github.com/repos/blakeblackshear/frigate/releases/latest",
+            "https://api.github.com/repos/deforest481/frigate/releases/latest",
             timeout=10,
         )
     except (RequestException, JSONDecodeError):

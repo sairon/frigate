@@ -8,7 +8,7 @@ A complete and local NVR designed for Home Assistant with AI object detection. U
 
 Use of a [Google Coral Accelerator](https://coral.ai/products/) is optional, but strongly recommended. CPU detection should only be used for testing purposes. The Coral will outperform even the best CPUs and can process 100+ FPS with very little overhead.
 
-- Tight integration with Home Assistant via a [custom component](https://github.com/blakeblackshear/frigate-hass-integration)
+- Tight integration with Home Assistant via a [custom component](https://github.com/deforest481/frigate-hass-integration)
 - Designed to minimize resource use and maximize performance by only looking for objects when and where it is necessary
 - Leverages multiprocessing heavily with an emphasis on realtime over processing every frame
 - Uses a very low overhead motion detection to determine where to run object detection

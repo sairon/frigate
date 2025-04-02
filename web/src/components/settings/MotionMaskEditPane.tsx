@@ -271,7 +271,7 @@ export default function MotionMaskEditPane({
             Motion masks do not prevent objects from being detected. You should
             use a required zone instead.
             <Link
-              to="https://github.com/blakeblackshear/frigate/discussions/13040"
+              to="https://github.com/deforest481/frigate/discussions/13040"
               target="_blank"
               rel="noopener noreferrer"
               className="my-3 block"

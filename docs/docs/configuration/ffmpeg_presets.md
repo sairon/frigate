@@ -3,7 +3,7 @@ id: ffmpeg_presets
 title: FFmpeg presets
 ---
 
-Some presets of FFmpeg args are provided by default to make the configuration easier. All presets can be seen in [this file](https://github.com/blakeblackshear/frigate/blob/master/frigate/ffmpeg_presets.py).
+Some presets of FFmpeg args are provided by default to make the configuration easier. All presets can be seen in [this file](https://github.com/deforest481/frigate/blob/master/frigate/ffmpeg_presets.py).
 
 ### Hwaccel Presets
 

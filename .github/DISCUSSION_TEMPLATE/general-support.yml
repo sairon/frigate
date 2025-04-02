@@ -8,9 +8,9 @@ body:
 
         Before submitting your support request, please [search the discussions][discussions], read the [official Frigate documentation][docs], and read the [Frigate FAQ][faq] pinned at the Discussion page to see if your question has already been answered by the community.
 
-        [discussions]: https://www.github.com/blakeblackshear/frigate/discussions
+        [discussions]: https://www.github.com/deforest481/frigate/discussions
         [docs]: https://docs.frigate.video
-        [faq]: https://github.com/blakeblackshear/frigate/discussions/12724
+        [faq]: https://github.com/deforest481/frigate/discussions/12724
   - type: textarea
     id: description
     attributes:
